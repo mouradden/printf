@@ -13,4 +13,6 @@ int	_print_hexa(unsigned int n, char *base);
 int	_print_unsigned_int(unsigned int n);
 int	_print_octal(unsigned int n, char *base);
 int	_print_address(unsigned long n, char *base);
+int	_print_binary(unsigned int n);
+
 #endif

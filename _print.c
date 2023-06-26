@@ -27,5 +27,7 @@ int	_print(va_list args, char c)
 	else if (c == 'p')
 		count += _putstr("0x")
 			+ _print_address(va_arg(args, unsigned long), "0123456789abcdef");
+	else if (c == 'b')
+		count += _print_binary(va_arg(args, unsigned int));
 	return (count);
 }
