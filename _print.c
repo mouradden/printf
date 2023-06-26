@@ -20,6 +20,8 @@ int	_print(va_list args, char c)
 		count += _print_hexa(va_arg(args, unsigned int), "0123456789abcdef");
 	else if (c == 'X')
 		count += _print_hexa(va_arg(args, unsigned int), "0123456789ABCDEF");
+	else if (c == 'o')
+		count += _print_octal(va_arg(args, unsigned int), "01234567");
 	else if (c == 'u')
 		count += _print_unsigned(va_arg(args, unsigned int));
 	return (count);
