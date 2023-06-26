@@ -8,5 +8,5 @@ int	_printf(const char *format, ...);
 int	_print(va_list args, char c);
 int	_putstr(char *s);
 int	_putchar(char c);
-
+int	_putnbr(long n);
 #endif

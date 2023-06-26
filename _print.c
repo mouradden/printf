@@ -10,7 +10,9 @@ int	_print(va_list args, char c)
 	int		count;
 
 	count = 0;
-	if (c == 'c')
+	if (c == 'd' || c == 'i')
+		count += _putnbr(va_arg(args, int));
+	else if (c == 'c')
 		count += _putchar(va_arg(args, int));
 	else if (c == 's')
 		count += _putstr(va_arg(args, char *));
