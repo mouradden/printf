@@ -15,14 +15,14 @@ int	_printf(const char *format, ...)
 		{
 			if (format[i + 1] == '%')
 			{
-				count += ft_putchar('%');
+				count += _putchar('%');
 				i++;
 			}
 			else 
 				count += ft_print(args, format[++i]);
 		}
 		else
-			count += ft_putchar(format[i]);
+			count += _putchar(format[i]);
 		i++;
 	}
 	va_end(args);
