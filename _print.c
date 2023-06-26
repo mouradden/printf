@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _print - Print c and s
+ * _print - Print
  * @args: argument.
- * @c : c or s
+ * @c : the caractere after %
  * Return: length of printed chars.
  */
 int	_print(va_list args, char c)
@@ -23,7 +23,7 @@ int	_print(va_list args, char c)
 	else if (c == 'o')
 		count += _print_octal(va_arg(args, unsigned int), "01234567");
 	else if (c == 'u')
-		count += _print_unsigned(va_arg(args, unsigned int));
+		count += _print_unsigned_int(va_arg(args, unsigned int));
 	else if (c == 'p')
 		count += _putstr("0x")
 			+ _print_address(va_arg(args, unsigned long), "0123456789abcdef");

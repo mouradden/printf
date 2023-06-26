@@ -10,7 +10,7 @@ int	_putstr(char *s);
 int	_putchar(char c);
 int	_putnbr(long n);
 int	_print_hexa(unsigned int n, char *base);
-int	_print_unsigned(unsigned int n);
+int	_print_unsigned_int(unsigned int n);
 int	_print_octal(unsigned int n, char *base);
 int	_print_address(unsigned long n, char *base);
 #endif

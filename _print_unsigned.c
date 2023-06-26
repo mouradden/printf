@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _print_unsigned - Print unsigned
+ * _print_unsigned_int - Print unsigned
  * @n : number to print
  * Return: length of printed chars.
  */
-int	_print_unsigned(unsigned int n)
+int	_print_unsigned_int(unsigned int n)
 {
 	int		count;
 
