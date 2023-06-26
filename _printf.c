@@ -28,7 +28,6 @@ int	_printf(const char *format, ...)
 		|| format[i + 1] == 'x' || format[i + 1] == 'X' || format[i + 1] == 'o'
 		|| format[i + 1] == 'p' || format[i + 1] == 'u'))
 		{
-			
 			if (format[i + 1] == '%')
 			{
 				count += _putchar('%');
