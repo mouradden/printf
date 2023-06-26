@@ -19,8 +19,8 @@ int	_printf(const char *format, ...)
 	va_start(args, format);
 	while (format[i])
 	{
-		if (ptr[i] == '%' && (ptr[i + 1] == '%' || ptr[i + 1] == 'c' || ptr[i + 1] == 's' || ptr[i + 1] == 'd' || ptr[i + 1] == 'i'
-		|| ptr[i + 1] == 'x' || ptr[i + 1] == 'X' || ptr[i + 1] == 'o' || ptr[i + 1] == 'p' || ptr[i + 1] == 'u'))
+		if (format[i] == '%' && (format[i + 1] == '%' || format[i + 1] == 'c' || format[i + 1] == 's' || format[i + 1] == 'd' || format[i + 1] == 'i'
+		|| format[i + 1] == 'x' || format[i + 1] == 'X' || format[i + 1] == 'o' || format[i + 1] == 'p' || format[i + 1] == 'u'))
 		{
 			if (format[i + 1] == '\0')
 			{
