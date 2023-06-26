@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * _printf - Printf function
+ * @format: string.
+ * Return: length of printed chars.
+ */
 int	_printf(const char *format, ...)
 {
 	va_list	args;
@@ -8,6 +12,8 @@ int	_printf(const char *format, ...)
 
 	count = 0;
 	i = 0;
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	while (format[i])
 	{

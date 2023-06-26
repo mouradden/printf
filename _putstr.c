@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * _putstr - Print a string
+ * @s : string to print
+ * Return: length of printed chars.
+ */
 int	ft_putstr(char *s)
 {
 	int		i;

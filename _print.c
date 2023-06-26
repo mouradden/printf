@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _print - Print c and s
+ * @args: argument.
+ * @c : c or s
+ * Return: length of printed chars.
+ */
 int	ft_print(va_list args, char c)
 {
 	int		count;

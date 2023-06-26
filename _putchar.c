@@ -1,17 +1,9 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mdenguir <mdenguir@student.1337.ma>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/22 18:19:25 by mdenguir          #+#    #+#             */
-/*   Updated: 2022/10/25 16:13:40 by mdenguir         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "main.h"
-
+/**
+ * _putchqr - Print a single char
+ * @c : char to print
+ * Return: length of printed chars.
+ */
 int	_putchar(char c)
 {
 	write(1, &c, 1);
