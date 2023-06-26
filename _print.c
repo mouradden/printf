@@ -5,7 +5,7 @@
  * @c : c or s
  * Return: length of printed chars.
  */
-int	ft_print(va_list args, char c)
+int	_print(va_list args, char c)
 {
 	int		count;
 
@@ -13,6 +13,6 @@ int	ft_print(va_list args, char c)
 	if (c == 'c')
 		count += _putchar(va_arg(args, int));
 	else if (c == 's')
-		count += ft_putstr(va_arg(args, char *));
+		count += _putstr(va_arg(args, char *));
 	return (count);
 }

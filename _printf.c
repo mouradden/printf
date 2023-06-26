@@ -21,15 +21,15 @@ int	_printf(const char *format, ...)
 		{
 			if (format[i + 1] == '\0')
 			{
-				return(-1);
+				return (-1);
 			}
 			if (format[i + 1] == '%')
 			{
 				count += _putchar('%');
 				i++;
 			}
-			else 
-				count += ft_print(args, format[++i]);
+			else
+				count += _print(args, format[++i]);
 		}
 		else
 			count += _putchar(format[i]);

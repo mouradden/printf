@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _putchqr - Print a single char
+ * _putchar - Print a single char
  * @c : char to print
  * Return: length of printed chars.
  */

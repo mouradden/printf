@@ -4,7 +4,7 @@
  * @s : string to print
  * Return: length of printed chars.
  */
-int	ft_putstr(char *s)
+int	_putstr(char *s)
 {
 	int		i;
 	int		count;
@@ -13,7 +13,7 @@ int	ft_putstr(char *s)
 	count = 0;
 	if (!s)
 	{
-		return (ft_putstr("(null)"));
+		return (_putstr("(null)"));
 	}
 	while (s[i])
 	{
