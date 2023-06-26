@@ -10,7 +10,7 @@ int	_print_hexa(unsigned int n, char *base)
 	int		count;
 
 	count = 0;
-	if (n >= 0 && n < 16)
+	if (n < 16)
 	{
 		count += _putchar(base[n]);
 	}
