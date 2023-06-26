@@ -16,5 +16,11 @@ int	_print(va_list args, char c)
 		count += _putchar(va_arg(args, int));
 	else if (c == 's')
 		count += _putstr(va_arg(args, char *));
+	else if (c == 'x')
+		count += _print_hexa(va_arg(args, unsigned int), "0123456789abcdef");
+	else if (c == 'X')
+		count += _print_hexa(va_arg(args, unsigned int), "0123456789ABCDEF");
+	else if (c == 'u')
+		count += _print_unsigned(va_arg(args, unsigned int));
 	return (count);
 }

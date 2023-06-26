@@ -9,4 +9,7 @@ int	_print(va_list args, char c);
 int	_putstr(char *s);
 int	_putchar(char c);
 int	_putnbr(long n);
+int	_print_hexa(unsigned int n, char *base);
+int	_print_unsigned(unsigned int n);
+
 #endif
