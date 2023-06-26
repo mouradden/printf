@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _putnbr - Print a strnumbering
- * @s : number to print
+ * @n : number to print
  * Return: length of printed chars.
  */
 int	_putnbr(long n)
